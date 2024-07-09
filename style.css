@@ -1,11 +1,11 @@
 @font-face {
     font-family: BigShoulDersDisplay;
-    src: url(/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+    src: url(fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: LexendDeca;
-    src: url(/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+    src: url(fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
 }
 
 :root {
