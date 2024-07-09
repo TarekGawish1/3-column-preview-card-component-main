@@ -1,0 +1,142 @@
+@font-face {
+    font-family: BigShoulDersDisplay;
+    src: url(/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url(/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    max-width: 920px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 0 48px 48px;
+}
+
+.container-1 {
+    height: 100%;
+    background-color: var(--brightOrange);
+}
+
+.container-2 {
+    height: 100%;
+    background-color: var(--darkCyan);
+}
+
+.container-3 {
+    height: 100%;
+    background-color: var(--veryDarkCyan);
+}
+
+h1 {
+    font-family: BigShoulDersDisplay;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--lightGray);
+}
+
+p {
+    width: 210px;
+    font-family: LexendDeca;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--transparentWhite);
+    line-height: 25px;
+    margin-right: 24px;
+}
+
+header p {
+    max-width: 220px;
+}
+
+a {
+    font-family: LexendDeca;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: var(--lightGray);
+    width: 146px;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+header img {
+    width: 64px;
+}
+
+.container-1 a {
+    color: var(--brightOrange);
+}
+
+.container-2 a {
+    color: var(--darkCyan);
+}
+
+.container-3 a {
+    color: var(--veryDarkCyan);
+}
+
+a:hover {
+    background-color: unset;
+    border: 2px solid var(--lightGray);
+    color: var(--transparentWhite);
+}
+
+@media  (max-width: 375px){
+    main {
+        max-width: 327px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        margin: 88px 24px;
+    }
+}
